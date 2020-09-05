@@ -52,7 +52,7 @@ Next step, When LED turns off, MOVE sensor in a FIGURE of EIGHT in a vertical di
 
 Look at the image in docs  directory, i have problem with the html addition
 <p align="center">
-  <img src="doc/ohtiht.jpg" width="350" title="Connections photo"></p>
+  <img src="docs/ohtiht.jpg" width="350" title="Connections photo"></p>
   
 <p align = "center">
 <img src="https://github.com/bossesand/OHTI-HT-osc-wifi/tree/master/docs/ohtiht.jpg" width="400">
