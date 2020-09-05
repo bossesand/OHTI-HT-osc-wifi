@@ -50,8 +50,9 @@ During HW initilization the blue LED will be lit, when it is turned off KEEP the
 Calibration procedure - wait 30 seconds after power on with sensor still in horizontal position,
 Next step, When LED turns off, MOVE sensor in a FIGURE of EIGHT in a vertical direction with usb cable connector as rotational center for about 20 seconds until the LED lighthes up.
 
+Look at the image in docs  directory, i have problem with the html addition
 <p align = "center">
-<img src "docs/ohtiht.jpg" "width "350">
+<img src docs/ohtiht.jpg>
 </p>
 
 
