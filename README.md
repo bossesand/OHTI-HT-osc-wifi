@@ -51,8 +51,11 @@ Calibration procedure - wait 30 seconds after power on with sensor still in hori
 Next step, When LED turns off, MOVE sensor in a FIGURE of EIGHT in a vertical direction with usb cable connector as rotational center for about 20 seconds until the LED lighthes up.
 
 Look at the image in docs  directory, i have problem with the html addition
+<p align="center">
+  <img src="doc/ohtiht.jpg" width="350" title="Connections photo"></p>
+  
 <p align = "center">
-<img src docs/ohtiht.jpg>
+<img src https://github.com/bossesand/OHTI-HT-osc-wifi/tree/master/docs/ohtiht.jpg>
 </p>
 
 
