@@ -4,15 +4,16 @@
 
 ToDo
 --------
-Add LED indication of calibration stage! (Steady light , then fast flashes?)!
+Add LED indication of calibration stage! (Steady light , then fast flashes?)! - Done, in a way
 Store and reload BNO055 Calibration over PowerOff in program flash!
 The OSC port for UDP broadcast is fixed at 9000, make it configurable?
 Add OSC support over websocket to control Omnitone webplayer.
-Do not send any osc message if the headtracker is stationary?
+Do not send any OSC message if the headtracker is stationary, might save power?
+Make it possible to control the ohti web based player with this HT
 
 Design choices: 
 -------------------------
-Originaly BNO055 IMU was used to minimize the programming effort and cpu load.
+Originally BNO055 IMU was used to minimize the programming effort and cpu load.
 Several versions of headtracker message protocols have been tried.
 OSC WiFi UDP is chosen for this version, only drawback is the current consumption of the WiFi communication.
 
@@ -50,7 +51,6 @@ During HW initilization the blue LED will be lit, when it is turned off KEEP the
 Calibration procedure - wait 30 seconds after power on with sensor still in horizontal position,
 Next step, When LED turns off, MOVE sensor in a FIGURE of EIGHT in a vertical direction with usb cable connector as rotational center for about 20 seconds until the LED lighthes up.
 
-Look at the image in docs  directory, i have problem with the html addition
 <p align="center">
   <img src="docs/ohtiht.jpg" width="800" title="Connections photo"></p>
   
