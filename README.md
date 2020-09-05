@@ -55,7 +55,7 @@ Look at the image in docs  directory, i have problem with the html addition
   <img src="doc/ohtiht.jpg" width="350" title="Connections photo"></p>
   
 <p align = "center">
-<img src https://github.com/bossesand/OHTI-HT-osc-wifi/tree/master/docs/ohtiht.jpg>
+<img src="https://github.com/bossesand/OHTI-HT-osc-wifi/tree/master/docs/ohtiht.jpg" width="400">
 </p>
 
 
