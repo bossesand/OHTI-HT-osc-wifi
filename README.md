@@ -71,38 +71,7 @@ GY-BNO055.                Adafruit BNO055.        Wemos D1 mini
 
 https://forum.arduino.cc/index.php?topic=427607.15 
 Info on Pin Remapping with Wire.begin()
-
-ESP12-F pinout
-https://www.pinterest.de/pin/115193702951946398/    
-
-Adafruit BNO055 pinout 
-https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/pinouts
-
-Pinout of Chinese module GY-BNO055:
-Uses chip: BNO-055
-Power supply: 3-5v (internal low voltage regulator)
-Communication method: standard IIC / serial communication protocol
-Communication: Module size 12mm * 20mm
-
-Arduino config to simplify connection (for Soldering or connectors) between 8266 D1 and BNO055 modules,
-when 4 straight pins soldered to bot modules BNO055 will be around 12 mm above the D1 mini. 
-
-How to Remap the SCL and SDA to different GPIO pins depending on IMU module pinout.
-For GY-BNO055 4 straight pins are used, If Adafruit bno055 is used 1 connection needs to be a wire to connect the 5 volt positions.
-
-Wire.begin(0,2);       // for Chinese GY-BNO055      -  4 straight connection pins
-Wire.begin(2,0);       // for Adafruit BNO055 module -  3 pins + one cable
-
-GY-BNO055.                Adafruit BNO055.        Wemos D1 mini
-                          -- Vin 5v             -\                 
--- Vin  5 - 3.3v          NoCon. Vin 3.3v           -- Vout   5v Powered by USB
--- GND.                   -- GND.                   -- GND
--- SCL  GPIO2.            -- SDA GPIO0.             -- D4 - Assign in Wire.begin 
--- SDA  GPIO0.            -- SCL GPIO2.             -- D3 - Assign
-   ADD                                                 NoCon
-   Int
-   Boot
-   Reset
+```
 
 Setup
 ---------
