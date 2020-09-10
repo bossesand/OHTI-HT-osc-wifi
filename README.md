@@ -34,7 +34,7 @@ The low cost HW solution is Wemos D1 mini ( esp8266 chinese module) and chinese 
 For a no solder solutions the QUIIC system and bno080 and esp8266 from sparkfun can be used.
 
 This is the references that explains how I was able to Simplify the conntions between the modules to use 4 straight pinsa as interconnection.
-
+```
 https://forum.arduino.cc/index.php?topic=427607.15 
 Info on Pin Remapping with Wire.begin()
 
@@ -125,7 +125,7 @@ During HW initilization the blue LED will be lit, when it is turned off KEEP the
 
 Calibration procedure - wait 30 seconds after power on with sensor still in horizontal position or until Blue Led starts blinking.
 Next step, MOVE sensor in a FIGURE of EIGHT in a vertical direction with usb cable connector as rotational center for about 20 seconds until the LED lightes up.
-
+```
 <p align="center">
   <img src="docs/ohtiht.jpg" width="800" title="Connections photo"></p>
   Simplified Interconnectivity Between BNO055 and esp8266 D1 mini.
