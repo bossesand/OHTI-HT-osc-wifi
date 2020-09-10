@@ -128,9 +128,10 @@ Next step, MOVE sensor in a FIGURE of EIGHT in a vertical direction with usb cab
 
 <p align="center">
   <img src="docs/ohtiht.jpg" width="800" title="Connections photo"></p>
+  Simplified Interconnectivity Between BNO055 and esp8266 D1 mini.
   
 <p align = "center">
-<img src="https://github.com/bossesand/OHTI-HT-osc-wifi/tree/master/docs/ohtiht.jpg" width="400" title="full size photo">
+<img src="https://github.com/bossesand/OHTI-HT-osc-wifi/tree/master/docs/ohtihtpins.jpg" width="400" title="full size photo">
 </p>
 
 
