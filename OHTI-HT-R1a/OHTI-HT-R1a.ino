@@ -8,12 +8,17 @@
 // https://platformio.org/lib/show/423/OSC/examples?file=ESP8266ReceiveMessage.ino
 // D1 Wifi UDP handling https://siytek.com/esp8266-udp-send-receive/
 #include <OSCMessage.h>
-#include <OSCBundle.h> /// https://github.com/CNMAT/OSC  0409
+#include <OSCBundle.h> /// https://github.com/CNMAT/OSC 
+
 #include <WiFiUdp.h>
+#include <ESP8266mDNS.h>
+#include <ESP8266WiFi.h>
+//#include <ESPAsyncWebServer.h>
 
 #include <Wire.h>
 #include "string.h"
 #include <BNO055.h>
+#include "BNO055.h"
 
 /* WiFiUDP Udp;
 #include <WiFiUdp.h>
@@ -25,6 +30,7 @@ WiFiUDP Udp;
 #include <DNSServer.h>
 #include <ESP8266WebServer.h>
 #include <WiFiManager.h>         // https://github.com/tzapu/WiFiManager
+
 
 // D1 Wifi UDP handling https://siytek.com/esp8266-udp-send-receive/
 // #include <OSCMessage.h>
@@ -287,12 +293,13 @@ union combo_quat
 
 
 
-void setup() {
-  //Wire.begin();
+void setup() 
+  {
+  Wire.begin(0, 2); //SDA, SCL - OHTI Pins configure on D1 Mini (wemos) to enable straight 4 pin connection to GY-BNO055 chinese with pin order 5V, GND, SCL, SDA
   //TWBR = 12;  // 400 kbit/sec I2C speed for Pro Mini
   //Setup for Master mode, pins 16/17, external pullups, 400kHz for Teensy 3.1
 
-  Wire.begin();
+  // Wire.begin();Wire.begin(4, 5); //SDA, SCL - This for other esp8266 or nrf52350
   // By default .begin() will set I2C SCL to Standard Speed mode of 100kHz
   Wire.setClock(400000); //Optional - set I2C SCL to High Speed Mode of 400kHz
   delay(2000);
@@ -331,6 +338,7 @@ void setup() {
   // if it does not connect it starts an access point with the specified name
   // here  "OHTI-AP"
   // and goes into a blocking loop awaiting configuration
+  
   wifiManager.autoConnect("OHTI-AP");
   // or use this for auto generated name ESP + ChipID
   //wifiManager.autoConnect();
@@ -339,15 +347,35 @@ void setup() {
   Serial.println("Connected.");
   
   server.begin();
-
+  
   //202008
     // Begin listening to UDP port
     
   Udp.begin(localPort);
   Serial.print("Listening on UDP port ");
   Serial.println(UDP_PORT);
-  
-  
+  /*
+//void AdvertiseServices(const char "OHTI-2");
+//{
+ if   (MDNS.begin("OHTI-2")){
+    Serial.println(F("mDNS responder started"));
+    Serial.print(F("I am: "));
+    Serial.println("OHTI-2");
+    
+    // Add service to MDNS-SD
+    MDNS.addService("n8i-mlp", "tcp", 23);
+    return;
+  }
+  else
+  {
+    while (1) 
+    {
+      Serial.println(F("Error setting up MDNS responder"));
+      delay(1000);
+    }
+  }
+//}
+*/
   // ==========================================================
   //          Calibration and comm test started here !! - Bosse
   
