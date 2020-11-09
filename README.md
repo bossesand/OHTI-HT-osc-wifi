@@ -78,22 +78,28 @@ Setup
 At initial power up or if the previously configured network is unreachable, enter the credentials to use a available WiFi network:
 
 Connect a computer to the wifi network OHTI AP.
-Access the webpage .......
+Access the webpage, Use Firefox or Opera connect to http://192.168.4.1 ,
+Chrome tries to connect to google so you possibly do not get the setup buttons. In some cases you are even disconnected from OHTI-AP.
 Enter the credentials for the local WiFi network to use.
 
-Click the save ... button, after the storage of the credentials the OHTI HT will reset and connect to the configured wifi network.
+Click the save ... button, after the storage of the credentials the OHTI HT will reset and connect to the chosen wifi network.
 
-If the configured network is not available at power on the OHTI AP will be started.
+If the configured network is not available at power on the OHTI-AP will be started, allowin connection to other WiFi net.
 
-Power the OHTI-HT by a usb power bank, is a suggestion if you do not power it from your computer. The power bank can be put in a pocket or at your belt.
+Power the OHTI-HT by a usb power bank, this is a suggestion if you do not power it from your computer. The power bank can be put in a pocket or at your belt.
 
 Usage
 ----------
 After power on:
+If you want to see what is going on during boot and calibration, connect to the usb serial port with for example Termite (on windows)
+
 During HW initilization the blue LED will be lit, when it is turned off KEEP the OHTI-HT still on flat surface.
 
 Calibration procedure - wait 30 seconds after power on with sensor still in horizontal position or until Blue Led starts blinking.
-Next step, MOVE sensor in a FIGURE of EIGHT in a vertical direction with usb cable connector as rotational center for about 20 seconds until the LED lightes up.
+Next step, MOVE sensor in a FIGURE of EIGHT in a vertical direction with usb cable connector as rotational center for about 20 seconds until the LED lights up.
+
+With the updated release nvsonic Headtracker OSC Bridge V3 can be used as a bridge from serial to OSC on local windows host.
+This gives a button for direction reset and other options.
 
 <p align="center">
   <img src="docs/ohtihtpins.jpg" width="800" title="Connections photo"></p>
