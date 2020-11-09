@@ -108,5 +108,7 @@ This gives a button for direction reset and other options.
 <p align = "center">
 <img src="https://github.com/bossesand/OHTI-HT-osc-wifi/tree/master/docs/ohtihtpins.jpg" width="400" title="full size photo">
 </p>
-
+<p align = "center">
+<img src="https://github.com/bossesand/OHTI-HT-osc-wifi/tree/master/docs/BR3.png" width="400" title="full size photo">
+</p>
 
