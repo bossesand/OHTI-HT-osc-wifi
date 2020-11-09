@@ -106,9 +106,6 @@ This gives a button for direction reset and other options.
   Simplified Interconnectivity Between BNO055 and esp8266 D1 mini.
   
 <p align = "center">
-<img src="docs/ohtihtpins.jpg" width="800" title="Simplified connectivity">
-</p>
-<p align = "center">
 <img src="docs/BR3.png" width="800" title="NVSONIC config">
 </p>
 
