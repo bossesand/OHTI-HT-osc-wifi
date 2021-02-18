@@ -6,15 +6,15 @@ ToDo
 --------
 Add LED indication of calibration stage! (Steady light , then fast flashes?)! - Done, in a way.
 
-Store and reload BNO055 Calibration over PowerOff in program flash!
+Store and reload BNO055 Calibration over PowerOff in program flash! -Not Yet
 
-The OSC port for UDP broadcast is fixed at 9000, make it configurable?
+The OSC port for UDP broadcast is fixed at 9000, make it configurable? -NO
 
-Add OSC support over websocket to control Omnitone webplayer? Or create proxy app for localhost?
+Add OSC support over websocket to control Omnitone webplayer? Donr in OSC-Bridge-V3C
 
 Do not send any OSC message if the headtracker is stationary, might save power?
 
-Make it possible to control the ohti web based player with this HT!
+Make it possible to control the ohti web based player with this HT - Done
 
 Design choices: 
 -------------------------
