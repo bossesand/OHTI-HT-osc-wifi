@@ -10,19 +10,19 @@ Store and reload BNO055 Calibration over PowerOff in program flash! -Not Yet
 
 The OSC port for UDP broadcast is fixed at 9000, make it configurable? -NO
 
-Add OSC support over websocket to control Omnitone webplayer? Donr in OSC-Bridge-V3C
+Add OSC support over websocket to control Omnitone webplayer? done fetch for windows 10 www.ohti.xyz://OHTI-OSC-Receiver-msgpack-1.2.exe.zip
 
 Do not send any OSC message if the headtracker is stationary, might save power?
 
 Make it possible to control the ohti web based player with this HT - Done
-
+http://www.ohti.xyz/ohti/index_osc_omnitone.html?socketurl=localhost&socketport=8080
 Design choices: 
 -------------------------
 Originally BNO055 IMU was used to minimize the programming effort and cpu load.
 Several versions of headtracker message protocols have been tried.
 OSC WiFi UDP is chosen for this version, only drawback is the current consumption of the WiFi communication.
 
-Currently the OSC message is configured to use the message syntax of the IEM SpatialRotator VST.
+Currently the OSC message is configured to use the message syntax of the IEM SceneRotator VST.
 
 The support of OSC message for IEM Spatial Rotator is a good combination with the IEM binaural decoder with SOFA support on Reaper DAW.
 
@@ -101,6 +101,7 @@ Next step, MOVE sensor in a FIGURE of EIGHT in a vertical direction with usb cab
 With the updated release nvsonic Headtracker OSC Bridge V3 can be used as a bridge from serial to OSC on local windows host.
 This gives a button for direction reset and other options.
 
+For 
 <p align="center">
   <img src="docs/ohtihtpins.jpg" width="800" title="Connections photo"></p>
   Simplified Interconnectivity Between BNO055 and esp8266 D1 mini.
